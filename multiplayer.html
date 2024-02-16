@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Handjet:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <title>MultiPlayer - Rock Paper Scissors</title>
+</head>
+<body>
+  <div class="container pwc">
+    <h1>Rock Paper Scissors!</h1>
+    <div class="image-container">
+      <h2 id="turn">Player 1's Turn</h2>
+      <div class="images">
+        <img src="rock.png" id="rock" class="hand rock" alt="Player's Rock-Hand">
+        <img src="paper.png" id="paper" class="hand paper" alt="Player's Paper-Hand">
+        <img src="scissor.png" id="scissor" class="hand scissor" alt="Player's scissor-Hand">
+      </div>
+      <div class="result" id="result">
+        <div class="messages" id="messages">
+          <p><!-- Player choice message --></p>
+          <p><!-- Computer choice message --></p>
+        </div>
+        <div class="resultmessage" id="resultmessage">
+          <p><!-- Result Win or lose Message --></p>
+        </div>
+        <div class="counts">
+          <p id="win"> Player 1's Wins: 0</p>
+          <p id="lose"> Player 2's Wins: 0</p>
+        </div>
+        <div class="button-container btn-pwc">
+          <button id="playAgain" class="hide">Play Again ?</button>
+          <button id="resetScore" onclick="resetScore()" >Reset Score</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <!-- copyright -->
+   <p> &copy;2023 by Diwash. All rights reserved.<br /> </p>
+   <a href="index.html"><button>Back to Lobby</button></a>
+  </footer>
+</body>
+<script src="mp.js"></script>
+</html>
